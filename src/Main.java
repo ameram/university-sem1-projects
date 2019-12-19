@@ -1,26 +1,42 @@
 public class Main {
     public static void main(String[] args) {
-
-        System.out.println(uToLower("Java"));
-        System.out.println(uToUpper("Java"));
-        System.out.println(setWidth("Java", 11));
-        System.out.println(uTrim("      Java      ").length());
-        System.out.println(uIndexOf("BMIRMOHAM", 'Q'));
+//
+//        System.out.println(uToLower("Java"));
+//        System.out.println(uToUpper("Java"));
+//        System.out.println(setWidth("Java", 11));
+//        System.out.println(uTrim("      Java      ").length());
+//        System.out.println(uIndexOf("BMIRMOHAM", 'Q'));
+        System.out.println(uIndexOfEx("AMIRSIFUN", "IR"));
+        System.out.println(uRemove("AMIRSIFUN", "IR"));
     }
 
     //# Functions
 
+    //06
+    private static String uRemove(String input, String toRemove) {
+        int startingPlace = uIndexOfEx(input, toRemove);
+        int i = toRemove.length();
+
+        return "Not removed";
+    }
+
     //05
     private static int uIndexOfEx(String input, String expression) {
-        int startIndex = 0;
+        int i = 0;
+
         int lastIndex = input.length() - expression.length();
-        while (startIndex < lastIndex) {
-            if (input.charAt(startIndex) == expression.charAt(startIndex))
-                while (startIndex < expression.length()) {
-                    startIndex+=1;
+        while (i < lastIndex) {
+            int x = 0;
+            while ((input.charAt(i + x) == expression.charAt(x))) {
+                x += 1;
+                if (x == expression.length() - 1) {
+                    return i;
                 }
-            startIndex += 1;
+
+            }
+            i += 1;
         }
+        return -1;
     }
 
     //04
@@ -37,7 +53,7 @@ public class Main {
 
     //03
     private static String uTrim(String input) {
-        String output = "";
+        StringBuilder output = new StringBuilder();
         int startPlace = 0;
         int lastIndex = input.length() - 1;
         while (input.charAt(startPlace) == ' ') {
@@ -47,10 +63,10 @@ public class Main {
             lastIndex -= 1;
         }
         while (startPlace <= lastIndex) {
-            output += input.charAt(startPlace);
+            output.append(input.charAt(startPlace));
             startPlace += 1;
         }
-        return output;
+        return output.toString();
     }
 
     //02
