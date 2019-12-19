@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
+
     }
 
     //# Functions
@@ -7,9 +8,18 @@ public class Main {
     //06
     private static String uRemove(String input, String toRemove) {
         int startingPlace = uIndexOfEx(input, toRemove);
+        StringBuilder output = new StringBuilder();
         int i = toRemove.length();
+        int counter = 0;
+        while (counter < input.length()) {
+            if ((counter < startingPlace) || (counter > startingPlace + i - 1)) {
+                output.append(input.charAt(counter));
 
-        return "Not removed";
+            }
+            counter += 1;
+        }
+
+        return output.toString();
     }
 
     //05
