@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7f97120-10d0-48c5-b8c6-5ca02e261b6f" name="Default Changelist" comment="With toLower and toUpper.">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StringOperations/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StringOperations/Main.class" afterDir="false" />
+    <list default="true" id="b7f97120-10d0-48c5-b8c6-5ca02e261b6f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576742076385</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="with setWidth() and indexOf() and indexOfExpression().">
+      <created>1576775722149</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576775722149</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -95,6 +99,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="With toLower and toUpper." />
-    <option name="LAST_COMMIT_MESSAGE" value="With toLower and toUpper." />
+    <MESSAGE value="with setWidth() and indexOf() and indexOfExpression()." />
+    <option name="LAST_COMMIT_MESSAGE" value="with setWidth() and indexOf() and indexOfExpression()." />
   </component>
 </project>

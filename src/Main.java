@@ -1,13 +1,5 @@
 public class Main {
     public static void main(String[] args) {
-//
-//        System.out.println(uToLower("Java"));
-//        System.out.println(uToUpper("Java"));
-//        System.out.println(setWidth("Java", 11));
-//        System.out.println(uTrim("      Java      ").length());
-//        System.out.println(uIndexOf("BMIRMOHAM", 'Q'));
-        System.out.println(uIndexOfEx("AMIRSIFUN", "IR"));
-        System.out.println(uRemove("AMIRSIFUN", "IR"));
     }
 
     //# Functions
