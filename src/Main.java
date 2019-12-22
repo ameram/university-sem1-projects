@@ -1,9 +1,47 @@
 public class Main {
     public static void main(String[] args) {
-
+        System.out.println(uSplitter("What??Where??When??Why??", "??"));
     }
 
     //# Functions
+
+    //08
+    private static int indexCounter(String input, String expression) {
+        int counter= 1;
+        String outString = input;
+        while (uIndexOfEx(outString, expression) > 0){
+            System.out.println("In WHile");
+            outString = uRemove(outString,expression);
+            counter+=1;
+            System.out.println(outString);
+        }
+
+        return counter;
+    }
+
+    //07
+    private static String uSplitter(String input, String expressionToRemove) {
+        System.out.printf("%s\n", input);
+        StringBuilder output = new StringBuilder();
+        int i = 0;
+
+        while (i < input.length()) {
+            if (i != uIndexOfEx(input, expressionToRemove)) {
+                output.append(input.charAt(i));
+                i+=1;
+            } else {
+                output.append(" ");
+                i += expressionToRemove.length();
+            }
+
+        }
+        if (uIndexOfEx(output.toString(), expressionToRemove) > 0) {
+            return uSplitter(output.toString(), expressionToRemove);
+        }
+        return output.toString();
+
+
+    }
 
     //06
     private static String uRemove(String input, String toRemove) {
