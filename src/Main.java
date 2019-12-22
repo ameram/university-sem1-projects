@@ -1,9 +1,50 @@
 public class Main {
     public static void main(String[] args) {
-
+        String userInput = "What??Where??Why??When??";
+        String userExpression = "??";
+        int loopConstant = indexCounter(userInput, userExpression);
+        for (int i = 0; i < loopConstant; i += 1) {
+            userInput = uSplitter(userInput, userExpression);
+            System.out.printf("Cut Version is: %s\n", userInput);
+        }
     }
 
     //# Functions
+
+    //08
+    private static int indexCounter(String input, String expression) {
+        int counter= 1;
+        String outString = input;
+        while (uIndexOfEx(outString, expression) > 0){
+            outString = uRemove(outString,expression);
+            counter+=1;
+        }
+
+        return counter;
+    }
+
+    //07
+    private static String uSplitter(String input, String expressionToRemove) {
+        //System.out.printf("%s\n", input);
+        StringBuilder output = new StringBuilder();
+        int i = 0;
+
+        while (i < input.length()) {
+            if (i != uIndexOfEx(input, expressionToRemove)) {
+                output.append(input.charAt(i));
+                i+=1;
+            } else {
+                //System.out.println(uIndexOfEx(input, expressionToRemove));
+                //System.out.println("Else");
+                output.append(" ");
+                i += expressionToRemove.length();
+            }
+
+        }
+        return output.toString();
+
+
+    }
 
     //06
     private static String uRemove(String input, String toRemove) {
