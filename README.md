@@ -9,3 +9,4 @@ Includes functions for:
 * remove()
 * splitter
 * _indexer_
+* reverse
