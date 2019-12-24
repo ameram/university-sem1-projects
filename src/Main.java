@@ -1,28 +1,28 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.printf("Reverse of %s is %s.\n", "Amir", reverse("Amir"));
+        System.out.printf("Reverse of %s is %s.\n", "Java", reverse("Java"));
     }
 
     //# Functions
 
     //09
-    private static String reverse (String input) {
+    private static String reverse(String input) {
         int i = 0;
         String output = "";
-        while (i< input.length()) {
+        while (i < input.length()) {
             output += input.charAt(input.length() - 1 - i);
-            i+=1;
+            i += 1;
         }
         return output;
     }
 
     //08
     private static int indexCounter(String input, String expression) {
-        int counter= 1;
+        int counter = 1;
         String outString = input;
-        while (uIndexOfEx(outString, expression) > 0){
-            outString = uRemove(outString,expression);
-            counter+=1;
+        while (uIndexOf(outString, expression) > 0) {
+            outString = uRemove(outString, expression);
+            counter += 1;
         }
 
         return counter;
@@ -35,11 +35,11 @@ public class Main {
         int i = 0;
 
         while (i < input.length()) {
-            if (i != uIndexOfEx(input, expressionToRemove)) {
+            if (i != uIndexOf(input, expressionToRemove)) {
                 output.append(input.charAt(i));
-                i+=1;
+                i += 1;
             } else {
-                //System.out.println(uIndexOfEx(input, expressionToRemove));
+                //System.out.println(uIndexOf(input, expressionToRemove));
                 //System.out.println("Else");
                 output.append(" ");
                 i += expressionToRemove.length();
@@ -53,7 +53,7 @@ public class Main {
 
     //06
     private static String uRemove(String input, String toRemove) {
-        int startingPlace = uIndexOfEx(input, toRemove);
+        int startingPlace = uIndexOf(input, toRemove);
         StringBuilder output = new StringBuilder();
         int i = toRemove.length();
         int counter = 0;
@@ -69,7 +69,7 @@ public class Main {
     }
 
     //05
-    private static int uIndexOfEx(String input, String expression) {
+    private static int uIndexOf(String input, String expression) {
         int i = 0;
 
         int lastIndex = input.length() - expression.length();
