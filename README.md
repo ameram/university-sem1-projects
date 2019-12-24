@@ -7,3 +7,5 @@ Includes functions for:
 * indexOf()
 * indexOfExpression()
 * remove()
+* splitter
+* _indexer_
