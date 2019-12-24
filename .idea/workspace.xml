@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b7f97120-10d0-48c5-b8c6-5ca02e261b6f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StringOperations/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StringOperations/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +22,11 @@
   </component>
   <component name="ProjectId" id="1VByL67ssvZhfm0B3vzCIldVz6t" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -31,18 +34,6 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -61,6 +52,18 @@
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -94,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576775843705</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="uSplitter is now added.">
+      <created>1576999481497</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576999481497</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,6 +123,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="With toLower and toUpper." />
     <MESSAGE value="with setWidth() and indexOf() and indexOfExpression()." />
-    <option name="LAST_COMMIT_MESSAGE" value="with setWidth() and indexOf() and indexOfExpression()." />
+    <MESSAGE value="uSplitter is now added." />
+    <option name="LAST_COMMIT_MESSAGE" value="uSplitter is now added." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="464" y="125" key="CommitChangelistDialog2" timestamp="1577179154446">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="464" y="125" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1577179154446" />
+    <state x="494" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1577076705748">
+      <screen x="0" y="23" width="1680" height="984" />
+    </state>
+    <state x="494" y="349" key="com.intellij.ide.util.TipDialog/0.23.1680.984@0.23.1680.984" timestamp="1577076705748" />
   </component>
 </project>

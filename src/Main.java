@@ -1,15 +1,20 @@
 public class Main {
     public static void main(String[] args) {
-        String userInput = "What??Where??Why??When??";
-        String userExpression = "??";
-        int loopConstant = indexCounter(userInput, userExpression);
-        for (int i = 0; i < loopConstant; i += 1) {
-            userInput = uSplitter(userInput, userExpression);
-            System.out.printf("Cut Version is: %s\n", userInput);
-        }
+        System.out.printf("Reverse of %s is %s.\n", "Amir", reverse("Amir"));
     }
 
     //# Functions
+
+    //09
+    private static String reverse (String input) {
+        int i = 0;
+        String output = "";
+        while (i< input.length()) {
+            output += input.charAt(input.length() - 1 - i);
+            i+=1;
+        }
+        return output;
+    }
 
     //08
     private static int indexCounter(String input, String expression) {
